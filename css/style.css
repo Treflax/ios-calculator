@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #242424;
+}
+
+.calculator {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.calculator input[type=text] {
+  width: calc(100% - 10px);
+  height: 60px;
+  font-size: 36px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+}
+.calculator .culculator__buttons button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #505050;
+  color: #fff;
+}
+.calculator .culculator__buttons button:active {
+  background-color: #bfbfbf;
+}
+.calculator .culculator__buttons .operator__button {
+  background-color: #ff9c00;
+  color: #fff;
+}
+.calculator .culculator__buttons .operator__button:nth-child(1), .calculator .culculator__buttons .operator__button:nth-child(2), .calculator .culculator__buttons .operator__button:nth-child(3) {
+  background-color: #D4D4D2;
+  color: #000;
+}
+.calculator .culculator__buttons .operator__button:active {
+  background-color: #d17d00;
+}
+.calculator .culculator__buttons .double__button {
+  width: 130px;
+}
+.calculator .culculator__buttons #zero__button {
+  width: 136px;
+  text-align: start;
+  padding: 0 25px;
+  border-radius: 30px;
+}
+.calculator .culculator__buttons #dot__button {
+  font-size: 36px;
+}
+.calculator .culculator__buttons #equals__button {
+  background-color: #ff9c00;
+  color: #fff;
+  font-size: 36px;
+}
+.calculator .culculator__buttons #equals__button:active {
+  background-color: #d17d00;
+}
